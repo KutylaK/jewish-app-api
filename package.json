@@ -1,0 +1,22 @@
+{
+  "name": "jewish-app-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no tests specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sikora00/jewish-app-api.git"
+  },
+  "author": "Maciej Sikorski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sikora00/jewish-app-api/issues"
+  },
+  "homepage": "https://github.com/Sikora00/jewish-app-api#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
