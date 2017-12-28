@@ -4,6 +4,7 @@ let app = express();
 
 let port = 5000;
 
+app.use(express.static('public'));
 app.get('/', (req, res) => res.send('Hellow World!'));
 
 app.listen(port, (err) => {
