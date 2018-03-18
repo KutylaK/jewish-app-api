@@ -1,22 +1,23 @@
 import * as express from 'express'
+import {Application} from 'express'
+import * as mongoose from 'mongoose';
+import {Router} from "./routes/Router";
+import {json} from "body-parser";
+
 
 class App {
-  public express
+    public express: Application;
 
-  constructor () {
-    this.express = express()
-    this.mountRoutes()
-  }
+    constructor() {
+        this.express = express();
+        mongoose.connect('mongodb://localhost:27017/jewish-app');
+        this.express.use(json());
+        this.mountRoutes()
+    }
 
-  private mountRoutes (): void {
-    const router = express.Router()
-    router.get('/', (req, res) => {
-      res.json({
-        message: 'Hello World!'
-      })
-    })
-    this.express.use('/', router)
-  }
+    private mountRoutes(): void {
+        this.express.use('/', Router);
+    }
 }
 
 export default new App().express

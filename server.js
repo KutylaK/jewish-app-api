@@ -38,7 +38,7 @@ router.get('/', function (req, res) {
 
 // more routes for our API will happen here
 
-let userRouter = require('./src/routes/userRoutes');
+let userRouter = require('./src/routes/UserRoutes');
 app.use('api/users', userRouter);
 
 // REGISTER OUR ROUTES -------------------------------
