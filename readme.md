@@ -1,4 +1,10 @@
-## Skeleton for Node.js applications written in TypeScript
+## Application mentioned in node.js and typescript
+
+#Instalation:
+1. Install node: https://nodejs.org/en/
+2. Install docker https://docs.docker.com/install/
+3. Run mongodb in docker `docker run --name some-mongo -d -p 27017:27017 mongo`
+
 
 ### Development
 
@@ -23,6 +29,3 @@ npm run lint
 ```bash
 docker build .
 ```
-
-## start a mongo instance
-docker run --name some-mongo -d -p 27017:27017 mongo
