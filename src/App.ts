@@ -12,7 +12,6 @@ class App {
         mongoose.connect('mongodb://localhost:27017/jewish-app');
         this.app.use(json());
         this.mountRoutes();
-        this.app.use('/', Router);
     }
 
     private mountRoutes(): void {
