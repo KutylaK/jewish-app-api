@@ -2,7 +2,7 @@
   "name": "jewish-app-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/App.js",
   "scripts": {
     "build": "tsc",
     "dev": "concurrently --kill-others \"tsc -w\" \"nodemon dist\"",

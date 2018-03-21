@@ -5,18 +5,19 @@ import * as mongoose from 'mongoose';
 import { Router } from './routes/Router';
 
 class App {
-    public app: Application;
+  public app: Application;
 
-    constructor() {
-        this.app = express();
-        mongoose.connect('mongodb://localhost:27017/jewish-app');
-        this.app.use(json());
-        this.mountRoutes();
-    }
+  constructor() {
+    this.app = express();
+    mongoose.connect('mongodb://localhost:27017/jewish-app');
+    this.app.use(json());
+    this.mountRoutes();
+  }
 
-    private mountRoutes(): void {
-        this.app.use('/', Router);
+  private mountRoutes(): void {
+    this.app.use('/', Router);
 
+  }
 }
 
-export default new App().app
+export default new App().app;
